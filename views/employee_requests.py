@@ -1,29 +1,66 @@
 
 EMPLOYEES = [
     {
-        "id": 1,
-        "name": "Snickers",
-        "species": "Dog",
-        "locationId": 1,
-        "customerId": 4,
-        "status": "Admitted",
-    },
-    {
-        "id": 2,
-        "name": "Roman",
-        "species": "Dog",
-        "locationId": 1,
-        "customerId": 2,
-        "status": "Admitted",
-    },
-    {
-        "id": 3,
-        "name": "Blue",
-        "species": "Cat",
-        "locationId": 2,
-        "customerId": 1,
-        "status": "Admitted",
-    },
+        id: 1,
+        "name": "Alphonse Meron",
+        "email": "ameron0@mashable.com",
+        "hourlyRate": 11.50
+
+    }, {
+        id: 2,
+        "name": "Damara Pentecust",
+        "email": "dpentecust1@apache.org",
+        "hourlyRate": 10.75
+
+    }, {
+        id: 3,
+        "name": "Anna Bowton",
+        "email": "abowton2@wisc.edu",
+        "hourlyRate": 12.30
+
+    }, {
+        id: 4,
+        "name": "Hunfredo Drynan",
+        "email": "hdrynan3@bizjournals.com",
+        "hourlyRate": 12.00
+
+    }, {
+        id: 5,
+        "name": "Elmira Bick",
+        "email": "ebick4@biblegateway.com",
+        "hourlyRate": 12.30
+
+    }, {
+        id: 6,
+        "name": "Bernie Dreger",
+        "email": "bdreger5@zimbio.com",
+        "hourlyRate": 11.50
+
+    }, {
+        id: 7,
+        "name": "Rolando Gault",
+        "email": "rgault6@google.com",
+        "hourlyRate": 11.80
+
+    }, {
+        id: 8,
+        "name": "Tiffanie Tubby",
+        "email": "ttubby7@intel.com",
+        "hourlyRate": 21.00
+
+    }, {
+        id: 9,
+        "name": "Tomlin Cutill",
+        "email": "tcutill8@marketwatch.com",
+        "hourlyRate": 12.10
+
+    }, {
+        id: 10,
+        "name": "Arv Biddle",
+        "email": "abiddle9@cafepress.com",
+        "hourlyRate": 13.00
+
+    }
 ]
 
 
@@ -46,15 +83,6 @@ def get_single_employee(id):
         if employee["id"] == id:
             requested_employee = employee
 
-            # matching_location = get_single_location(requested_employees["locationId"])
-            # requested_employees["location"] = matching_location
-
-            # matching_customer = get_single_customer(requested_employees["customerId"])
-            # requested_employees["customer"] = matching_customer
-
-            # del requested_employees["locationId"]
-            # del requested_employees["customerId"]
-
     return requested_employee
 
 
@@ -75,7 +103,7 @@ def create_employee(employee):
     return employee
 
 
-def delete_animal(id):
+def delete_employee(id):
     # Initial -1 value for animal index, in case one isn't found
     employee_index = -1
 
